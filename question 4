@@ -15,7 +15,7 @@ Single line printing the result as:
 The distance between {char1} and {char2} is {value}
 
 ------------------------------------------------------------------------ solution ------------------------------------------------------------------------------------------------------------#include <stdio.h>
-
+#include<stdio.h>
 int main() {
     char char1, char2;
     scanf("%c %c", &char1, &char2);
