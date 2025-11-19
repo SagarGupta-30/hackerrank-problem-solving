@@ -1,0 +1,37 @@
+You are given hours, minutes, and seconds.
+Convert the entire time into total seconds.
+
+Important Instructions
+
+Do NOT write the entire logic in main().
+Create a function int toSeconds(int hours, int minutes, int seconds) and call it from main().
+Input Format
+
+Three space-separated integers: {hours} {minutes} {seconds}
+
+Constraints
+
+0 ≤ hours ≤ 100
+0 ≤ minutes < 60
+0 ≤ seconds < 60
+Output Format
+
+Single line printing the result as:
+Total seconds: {res}
+
+------------------------------------------------------------------------------- solution -------------------------------------------------------------------------------------------------------------------#include <stdio.h>
+
+int toSeconds(int hours, int minutes, int seconds) {
+    return hours * 3600 + minutes * 60 + seconds;
+}
+
+int main() {
+    int h, m, s;
+    scanf("%d %d %d", &h, &m, &s);
+
+    int total = toSeconds(h, m, s);
+
+    printf("Total seconds: %d", total);
+
+    return 0;
+}
